@@ -5,6 +5,8 @@ on:
     branches:
       - main
   workflow_dispatch: # Permet d'exécuter manuellement le workflow
+  schedule:
+    - cron: '0 * * * *'  # Exécute le workflow toutes les heures
 
 jobs:
   run-bot:
